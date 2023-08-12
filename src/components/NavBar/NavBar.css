@@ -1,0 +1,166 @@
+/* NavBar.css */
+
+/* Estilos del ícono del carrito */
+.cart-items {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+/* Estilos del enlace "Ver todos" en el menú desplegable */
+.dropdown-item.ver-todos {
+  background-color: black;
+  color: white;
+}
+
+/* Estilos del logo de la marca en la barra de navegación */
+.navbar .navbar-brand.navbar-logo {
+  font-size: 45px;
+  color: transparent;
+  background-image: linear-gradient(to right, #e6e6e6, #ccc, #e6e6e6);
+  background-size: 200% 100%;
+  background-position: 0 50%;
+  animation: shimmer 2s infinite, rotate 6s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-animation: shimmer 2s infinite, rotate 6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(200px) rotateY(360deg);
+  }
+}
+
+/* Estilos generales de la barra de navegación */
+.my-navbar {
+  font-family: 'Agdasima', sans-serif;
+  font-size: 25px;
+}
+
+/* Estilos del resumen del carrito */
+.cart-summary {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 300px; /* Ajuste del ancho */
+  max-height: 300px; /* Ajuste de la altura máxima */
+  overflow-y: auto; /* Agregar barra de desplazamiento */
+  z-index: 999;
+}
+
+/* Estilos para el contenido de cada ítem del carrito */
+.cart-item {
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.product-detail-price p {
+  color: red; 
+}
+
+.cart-item img {
+  width: 40px; /* Ancho de la imagen */
+  height: auto;
+  margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+.cart-item div {
+  flex-grow: 0.5; /* Permitir que el div crezca para llenar el espacio */
+}
+
+.cart-item p {
+  margin: 0; /* Eliminar márgenes para un espaciado uniforme */
+}
+
+/* Estilos del botón de eliminar productos del carrito */
+.cart-remove-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px; /* Ajuste del padding */
+  cursor: pointer;
+}
+
+/* Estilos para el botón "Ver carrito" */
+.cart-summary-actions .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilos del divisor para el botón "Ver carrito" */
+.cart-summary-actions .divider {
+  height: 1px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Estilos del resumen del carrito */
+  .cart-summary {
+    width: 100%; /* Ancho completo en móviles */
+    top: 50px; /* Ajuste de la posición superior */
+  }
+
+  /* Estilos para el contenido de cada ítem del carrito */
+  .cart-item {
+    flex-direction: column; /* Alineación vertical en móviles */
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 60px; /* Ancho de la imagen en móviles */
+    margin-bottom: 5px; /* Espacio debajo de la imagen */
+  }
+
+  .cart-item div {
+    flex-direction: column; /* Alineación vertical en móviles */
+    align-items: flex-start;
+  }
+
+  .cart-item p {
+    margin: 0;
+  }
+
+  /* Estilos del botón de eliminar productos del carrito */
+  .cart-remove-button {
+    margin-left: auto; /* Alinear a la derecha en móviles */
+    margin-bottom: 10px; /* Espacio debajo del botón */
+  }
+
+  /* Estilos para el botón "Ver carrito" */
+  .cart-summary-actions .btn {
+    padding: 5px; /* Padding reducido en móviles */
+  }
+}

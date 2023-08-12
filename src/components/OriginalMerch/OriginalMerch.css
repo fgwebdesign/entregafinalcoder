@@ -1,0 +1,134 @@
+/* OriginalMerch.css */
+.original-merch {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Agdasima', sans-serif;
+  background-color: black;
+}
+
+.original-merch h1 {
+  animation: glow 3s infinite alternate;
+  -webkit-animation: glow 3s infinite alternate;
+  color:  gold;
+  font-size: 55px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #666666, #999999, #cccccc, #999999, #666666);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: green;
+  text-decoration: none;
+}
+
+.product-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  color: #c0c0c0; 
+}
+
+.product-link {
+  text-decoration: none; 
+  color: white; 
+}
+
+
+
+
+
+.product-card-divider {
+  height: 1px;
+  background-color: #999999;
+  margin: 10px 0;
+}
+
+.description {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button-custom {
+  width: 100%;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buy-button-custom:hover {
+  background-color: #cc0000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button-custom:disabled {
+  background-color: #aaaaaa;
+  cursor: not-allowed;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+}

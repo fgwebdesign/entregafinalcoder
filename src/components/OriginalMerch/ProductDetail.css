@@ -1,0 +1,174 @@
+body {
+  background: linear-gradient(135deg, #111, #222);
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+  background-blend-mode: multiply;
+  background-repeat: repeat;
+  background-size: auto;
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  color: #fff; /* esto es solo para asegurarnos de que el texto sea legible contra un fondo oscuro */
+}
+
+.divider {
+  width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+  height: 1px;  /* El grosor del divider */
+  background-color: red;  /* El color del divider */
+  margin: 20px 0;  /* Agrega un poco de margen arriba y abajo para separar el contenido */
+}
+
+.error-message {
+  background-color: #ffe5e5;
+  color: #e00;
+  padding: 1px;
+  margin: 1px 0;
+  border: 1px solid #e00;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.product-detail-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: 'Agdasima', sans-serif;
+}
+
+.product-detail-image {
+  width: 600px; 
+  height: auto;
+}
+
+.product-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-detail-title {
+  font-size: 44px;
+  color: #fff;
+}
+
+.product-detail-description {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.product-detail-price {
+  margin-top: 10px;
+  color: red;
+  font-size: 40px;
+}
+
+.product-detail-size {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.product-detail-buy-button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px; 
+  text-transform:uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-detail-buy-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-detail-buy-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.size-button {
+  font-family: 'Agdasima', sans-serif;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 40px; /* Ancho fijo */
+  height: 40px; /* Alto fijo */
+  line-height: 36px; /* Alineación vertical del texto */
+  text-align: center; /* Alineación horizontal del texto */
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+.size-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.size-button.active {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .product-detail-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-detail-image-container {
+  width: 80%; /* Cambio en el contenedor de la imagen */
+}
+
+.product-detail-image {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo para la imagen */
+    height: auto;
+}
+
+.product-detail-info {
+    text-align: center;
+}
+
+.product-detail-size {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.product-detail-buy-button {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.size-button {
+  width: 35px; 
+  height: 35px; 
+  line-height: 31px; 
+}
+}
+.product-detail-image-container {
+  overflow: hidden; 
+  width: 600px;
+  position: relative; 
+}
+
+.product-detail-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.product-detail-image:hover {
+  transform: scale(1.1); 
+}

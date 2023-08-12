@@ -1,0 +1,123 @@
+.AboutDuketoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: 'Agdasima', sans-serif;
+  color: #fff;
+}
+
+.AboutDuketoImage {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.AboutDuketoImage img {
+  max-width: 66%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  position: relative;
+  z-index: 1;
+}
+
+.AboutDuketoImage::before,
+.AboutDuketoImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Hereda la imagen del contenedor */
+  background-size: cover;
+  clip-path: polygon(0% 20%, 100% 20%, 100% 30%, 0% 30%); /* Efecto de glitch */
+  animation: glitch 1s infinite linear alternate-reverse; /* Animación de glitch */
+}
+
+.AboutDuketoImage::after {
+  clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%); /* Efecto de glitch diferente */
+  animation-delay: 0.5s; /* Retraso para variar el efecto */
+}
+
+
+
+
+
+.AboutDuketoContent {
+  max-width: 40%;
+  padding: 0 20px; 
+}
+
+.AboutDuketoContent h2 {
+  font-size: 55px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  opacity: 0; /* El título es inicialmente invisible */
+  animation-name: animateGold, fadeIn;
+  animation-duration: 3s, 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear, ease-in;
+}
+
+.AboutDuketoContent p {
+  margin-bottom: 20px;
+  text-align: left;
+  opacity: 0; /* El texto es inicialmente invisible */
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@media (max-width: 768px) {
+  .AboutDuketoContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
+  
+  .AboutDuketoImage img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .AboutDuketoContent {
+    max-width: 80%;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .AboutDuketoContent h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@keyframes animateGold {
+  0% {
+    color: white;
+  }
+  100% {
+    color: gold; 
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}

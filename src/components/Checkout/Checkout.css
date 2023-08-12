@@ -1,0 +1,475 @@
+/* Checkout.css */
+
+.checkout-step,
+.confirmation-list {
+  font-family: 'Agdasima', sans-serif;
+}
+
+.saved-card-details {
+  background: #a3a3a3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-type {
+  font-weight: bold;
+}
+
+.card-number {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-holder,
+.card-expiry {
+  font-size: 16px;
+}
+
+
+/* Simulador de Tarjeta de Crédito */
+.credit-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card-simulator {
+  background: linear-gradient(135deg, #424242 0%, #000000 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.credit-card-simulator.Visa {
+  background: linear-gradient(135deg, #1a1f71 0%, #303b8e 100%);
+}
+
+.credit-card-simulator.MasterCard {
+  background: linear-gradient(135deg, #e44d26 0%, #f16529 100%);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-icon {
+  font-size: 28px;
+}
+
+.card-type {
+  font-size: 14px;
+}
+
+.card-number {
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-holder,
+.card-expiry {
+  font-size: 14px;
+}
+
+/* Formulario de Tarjeta de Crédito */
+.credit-card-form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+}
+
+
+.payment-modal {
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 300px;
+  z-index: 1000;
+  color: #fff; 
+  font-family: 'Agdasima', sans-serif; 
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  color: #fff; /* Color de cierre en blanco */
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bank-transfer-details .bank-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bank-transfer-details .bank-label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #fff; /* Color de etiqueta en blanco */
+}
+
+.bank-transfer-details .bank-value {
+  color: #fff; /* Color de valor en blanco */
+}
+
+.bank-transfer-details .bank-icon {
+  color: #ff0000; /* Color de icono en rojo */
+  margin-right: 8px;
+}
+
+.bank-additional-info {
+  color: #fff; /* Color de información adicional en blanco */
+  font-style: italic;
+}
+
+
+/* Estilos para las opciones de pago */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.payment-option img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.confirmation-tick i {
+  color: green;
+  font-size: 48px;
+}
+
+.confirmation p {
+  font-size: 16px;
+  color: #000;
+}
+
+/* Estilos para los detalles de la transferencia bancaria */
+.bank-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos para los detalles de la tarjeta de crédito/débito */
+.card-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation-tick {
+  color: green;
+  font-size: 48px;
+}
+
+.confirmation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.confirmation-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.confirmation-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.confirmation-details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+
+
+/* Estilos generales para el formulario */
+.checkout {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-option:hover {
+  background-color: #e5e5e5;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-option img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkout-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkout-buttons button:hover {
+  background-color: #0056b3;
+}
+
+
+.checkout-step {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #fff;
+  color: #000; 
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #b51111; 
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.completed .step-circle {
+  background-color: #007bff;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+}
+
+
+.confirmation-list {
+  display: none;
+}
+
+.payment-option.bank-transfer {
+  background-color: #48bd69; 
+  color: #000000;
+}
+
+
+.payment-option.credit-card {
+  background-color: #55b1e6; 
+  color: #000000; 
+}
+
+
+.payment-option i {
+  color: #000000;
+  margin: 5px;
+}
+
+.confirmation-list.visible {
+  display: block;
+}
+
+.confirmation-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center; 
+  padding: 10px;
+  font-size: 40px; 
+}
+
+.payment-icons i {
+  margin: 0 5px; 
+}
+
+.payment-icons .fa-cc-visa {
+  color: #1a1f71; 
+}
+
+
+.payment-icons .fa-cc-mastercard {
+  color: #e44d26; 
+}
+
+
+.payment-icons .fa-money {
+  color: #85bb65;
+}
+
+
+.payment-icons .fa-credit-card-alt {
+  color: #007bff;
+}
+
+.payment-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.confirmation-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.confirmation-list li p {
+  color: #000;
+  font-size: 18px;
+}
+
+.confirmation-list li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.confirmation-list li h3 {
+  margin: 0;
+}
+
+/* Estilo para la imagen del carrito vacío */
+.empty-cart-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: none;
+}
+
+/* Mostrar la imagen solo cuando no hay productos en el carrito */
+.confirmation-list.visible .empty-cart-image {
+  display: block;
+}
+
+/* Contenedor para centrar el contenido */
+.empty-cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente el contenido */
+  justify-content: center; /* Centrar verticalmente el contenido */
+}
+
+

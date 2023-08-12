@@ -1,0 +1,57 @@
+/* CheckoutStep.css */
+.checkout-step {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-step.active {
+    display: block;
+  }
+  
+  .checkout-step h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-step form,
+  .checkout-step .order-summary {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkout-step form label,
+  .checkout-step .order-summary h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .checkout-step form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .step-buttons {
+    margin-top: 20px;
+  }
+  
+  .step-buttons button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+  
+  .step-buttons button:last-child {
+    margin-right: 0;
+  }
+  

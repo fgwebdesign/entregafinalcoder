@@ -1,0 +1,89 @@
+.EventList {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px 0;
+  table-layout: fixed;
+}
+
+.EventList th {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 30%; 
+}
+
+.EventList td,
+.EventList th {
+  padding: 15px; 
+  border: 1px solid #ccc;
+  text-align: left;
+  width: 30%;
+}
+
+.EventList td.buyNow,
+.EventList td.soldOut {
+  text-align: center;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.EventListContainer {
+  font-family: 'Agdasima', sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #000000, #0b0b0b, #080808, #030303);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-transform: uppercase;
+}
+
+.soldOut {
+  font-weight: bold;
+  background-color: red;
+  color: white;
+}
+
+.buyNow {
+  background-color: #23a34c;
+  color: white;
+}
+
+.EventList .flag-icon {
+  margin-right: 5px;
+}
+
+.EventList td:nth-child(2) {
+  width: 60px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .EventList th,
+  .EventList td {
+    width: auto;
+  }
+
+  .EventList td:nth-child(2) {
+    width: auto;
+  }
+
+  .EventList td.buyNow,
+  .EventList td.soldOut {
+    text-align: center;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
